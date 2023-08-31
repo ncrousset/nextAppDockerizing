@@ -1,6 +1,6 @@
 version: '3.0.0'
 services:
-  nextjs:
+  client:
     build:
       context: ./
       target: runner
@@ -11,3 +11,15 @@ services:
       - "3000:3000"
     environment:
       NODE_ENV: development
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - react_build:/var/www/next
+    depends_on:
+      - client
+volumes:
+  react_build:
