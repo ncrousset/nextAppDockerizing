@@ -1,0 +1,32 @@
+{
+  "name": "nextappdockerizing",
+  "version": "1.0.0",
+  "description": "Dockerizing a clear project with nextJS, React ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ncrousset/nextAppDockerizing.git"
+  },
+  "author": "Rudys Acosta Crousset",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ncrousset/nextAppDockerizing/issues"
+  },
+  "homepage": "https://github.com/ncrousset/nextAppDockerizing#readme",
+  "dependencies": {
+    "next": "^13.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.5.7",
+    "@types/react": "18.2.21",
+    "typescript": "5.2.2"
+  }
+}
