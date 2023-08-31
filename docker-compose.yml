@@ -6,11 +6,10 @@ services:
       target: runner
     volumes:
       - .:/app
-    command: npm run dev
     ports:
       - "3000:3000"
     environment:
-      NODE_ENV: development
+      NODE_ENV: production
 
   nginx:
     image: nginx:latest
